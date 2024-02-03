@@ -22,5 +22,9 @@ def visit():
     times += 1
     return f"Visited {times}"
 
+@app.route("/salut/<nume>")
+def salut(nume):
+    return f"Salut {nume}!"
+
 
 app.run("0.0.0.0")
